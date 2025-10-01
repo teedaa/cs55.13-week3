@@ -1,8 +1,13 @@
+// Import Next.js Head component to manage the document head (title, meta tags)
 import Head from 'next/head';
+// Import the page Layout (default export) and a named export `siteTitle` used for the document title
 import Layout, { siteTitle } from '../components/layout';
+// Import CSS module to apply scoped styles
 import utilStyles from '../styles/utils.module.css';
  
+// Default-exported React page component; Next.js treats this as the root page "/"
 export default function Home() {
+  // Function body returns JSX that defines the home page layout
   return (
     <Layout home>
       <Head>
